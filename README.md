@@ -1,6 +1,5 @@
 
-**
-Chemoinformatics: Protein Similarity via Ligand Chemistry**
+****Chemoinformatics: Protein Similarity via Ligand Chemistry****
 
 This project applies chemoinformatics methods to compare proteins based on the chemical similarity of their ligands rather than sequence or structure alone. Using DrugBank data, ligand fingerprints, and Tanimoto similarity, the pipeline identifies statistically significant relationships between proteins and visualizes them as networks.
 
