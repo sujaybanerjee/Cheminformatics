@@ -1,14 +1,14 @@
-README.md
 
-Chemoinformatics: Protein Similarity via Ligand Chemistry
+**
+Chemoinformatics: Protein Similarity via Ligand Chemistry**
 
 This project applies chemoinformatics methods to compare proteins based on the chemical similarity of their ligands rather than sequence or structure alone. Using DrugBank data, ligand fingerprints, and Tanimoto similarity, the pipeline identifies statistically significant relationships between proteins and visualizes them as networks.
 
-Motivation
+**Motivation**
 
 Proteins that are dissimilar in sequence or structure may still bind similar ligands, while closely related proteins may not share ligands at all. By comparing proteins through the chemistry of their binding partners, this project follows a ligand-centric approach inspired by the Similarity Ensemble Approach (SEA).
-
-Methods Overview
+**
+Methods Overview**
 	•	Chemical representation
 	•	Parsed SMILES strings and molecular fingerprints from DrugBank
 	•	Compared ligands using the Tanimoto (Jaccard) coefficient
@@ -22,7 +22,7 @@ Methods Overview
 	•	Built a protein–protein network where edges represent statistically significant ligand-set similarity
 	•	Visualized the network with NetworkX, coloring nodes by disease indication
 
-Key Scripts
+**Key Scripts**
 	•	tanimoto.py
 Computes pairwise Tanimoto similarities between drugs and labels shared targets.
 	•	pvalue.py
@@ -32,13 +32,13 @@ Generates a protein interaction edgelist based on significant bootstrap results.
 	•	plot_graph.py
 Visualizes the protein similarity network using NetworkX and Matplotlib.
 
-Outputs
+**Outputs**
 	•	Histograms of ligand similarity distributions
 	•	Bootstrap p-values for protein pairs
 	•	Protein similarity network highlighting shared pharmacology across disease areas
 
-Technologies Used
-	•	Python
+**Technologies Used**
+	•	Python 3.12.1
 	•	NetworkX
 	•	NumPy / Pandas
 	•	Matplotlib
